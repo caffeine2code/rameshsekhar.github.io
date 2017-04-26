@@ -80,6 +80,8 @@
         </div>
     </div>
 
+    <div id="comments"></div>
+
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -114,6 +116,15 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="bs/js/bootstrap.min.js"></script>
 
-</body>
+    <script src="https://apis.google.com/js/plusone.js"></script>
+    <script>
+        gapi.comments.render('comments', {
+        href: window.location,
+        width: '624',
+            first_party_property: 'BLOGGER',
+                view_type: 'FILTERED_POSTMOD'
+        });
+    </script>
 
+</body>
 </html>
